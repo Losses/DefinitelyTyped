@@ -143,6 +143,7 @@ declare namespace anime {
     function bezier(x1: number, y1: number, x2: number, y2: number): (t: number) => number;
     function stagger(value: number | string | ReadonlyArray<number | string>, options?: StaggerOptions): FunctionBasedParameter;
     function set(targets: AnimeTarget, value: {[AnyAnimatedProperty: string]: any}): void;
+    function tick(time: number): void;
     // Timeline
     function timeline(params?: AnimeParams | ReadonlyArray<AnimeInstance>): AnimeTimelineInstance;
     function random(min: number, max: number): number;
